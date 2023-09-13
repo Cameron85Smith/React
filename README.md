@@ -27,6 +27,7 @@ The beauty of React is that it does not have an opinion on which library to use 
 ## JavaScript Refresher
 
 #### The Script Tag
+###### <u>JavaScriptRefresher Project</u>
 
 By convention, we add JavaScript to our website by using the **\<script></script>** import tag. The import is a navigation to a folder that holds the scripts. We create this separate scripts folder because as Software Engineers, this helps us to maintain complex JavaScript apps that make the code base easier to navigate, maintain, and understand.
 
@@ -41,6 +42,11 @@ This script will now be part of the web page when the web page is loaded.
 ```
 <script src="assets/scripts/app.js"></script>
 ```
+
+###### <u>ReactVSVanilla Project</u>
+
+In comparison to the JavaScriptRefresher project, if we inspect the <b>index.html</b> file, we will notice that we are not using any script tags at all. If we open Developer Tools in the browser and inspect the <b>index.html</b>, you will see that now, there are script tags in the file. This is explained in the next section, <b>The Reaact Build Process</b>.
+
 #### The React Build Process
 
 It is important to note that in the context of React, we will never add **\<script></script>** tags to our HTML files on our own because React projects always use a build process which, as part of the process, injects the **\<script></script>** tags into the HTML code for us. React transforms our code before it is handed over to the browser. This transformation is done with the help of the **react-scripts** library that runs in the background. This library is referenced in the **package.json** file that holds a list of all of the dependencies for the project.
